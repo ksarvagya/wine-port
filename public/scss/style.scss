@@ -1,0 +1,84 @@
+// COLORS
+$ltBlueGrey: #E8F3FC;
+$highlighter: #FAF33E;
+$aqua:  #4ECCCE;
+$dkBlue: #3E4B6B;
+
+// FONT MIXINS
+@mixin spacedMontserrat {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+body {
+  color: lighten($dkBlue, 5%);
+  font-family: 'Merriweather', serif;
+}
+
+::selection {
+  background: rgba($highlighter, .8); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: rgba($highlighter, .8); /* Gecko Browsers */
+}
+
+
+h1 {
+  @include spacedMontserrat;
+  color: lighten($dkBlue, 15%);
+}
+
+p, ul, li {
+  font-size: 20px;
+}
+
+a {
+  color: darken($aqua, 5%);
+
+  -o-transition: color 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -khtml-transition: color 0.5s ease;
+  -webkit-transition: color 0.5s ease;
+  -ms-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+// Front-Page specific
+
+img.proPic {
+  margin-top: 27px;
+}
+
+.social {
+  margin-top: 16px;
+}
+
+.social img {
+  background-color: lighten($dkBlue, 15%);
+  width: 40px;
+  border-radius: 20px;
+
+  -o-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  -khtml-transition: background-color 0.5s ease;
+  -webkit-transition: background-color 0.5s ease;
+  -ms-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+
+  &:hover {
+    background-color: $aqua;
+  }
+  margin: 0 5px;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    letter-spacing: .08em;
+    font-size: 20px;
+  }
+  p, ul, li {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "port-wine",
+  "authors": [
+    "Alice Young <aliceyoung.9@gmail.com>"
+  ],
+  "main": "app.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  }
+}

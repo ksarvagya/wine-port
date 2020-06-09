@@ -1,0 +1,38 @@
+extends layout
+
+block content
+  .row
+    .col-md-2.col-sm-3
+      .row
+        .col-sm-12.col-sm-offset-0.col-xs-4.col-xs-offset-4
+          img(srcset="/images/me-108.jpg  108w, /images/me-224.jpg  224w",
+        src="/images/me.jpg",
+        alt="Picture of Alice Young, looking down at her cellphone, with a camera in her lap. Taken by Ali Ukani").img-responsive.proPic
+        
+        .col-xs-12
+          .text-center.social
+            a(href="//www.github.com/aliceyoung9")
+              span.sr-only Github
+              img(srcset="/images/github-128.png 128w, /images/github-64.png 64w, /images/github-48.png 48w" src="/images/github-48.png" alt="(Github Icon)")
+            a(href="//www.twitter.com/alice_young9")
+              span.sr-only Twitter
+              img(srcset="/images/twitter-128.png 128w, /images/twitter-64.png 64w, /images/twitter-48.png 48w" src="/images/twitter-48.png" alt="(Github Icon)")
+            a(href="//flickr.com/photos/epsilon289")
+              span.sr-only Flickr
+              img(srcset="/images/flickr-128.png 128w, /images/flickr-64.png 64w, /images/flickr-48.png 48w" src="/images/flickr-48.png" alt="(Flickr Icon)")
+    .col-lg-7.col-md-9.col-sm-9.col-xs-12
+      h1 Under Reconstruction.
+      p.
+        If you came looking for a portfolio, a copy of the old site can be found
+        #[a(href="//aliceyoung9.github.io") here].
+      p.
+        Why the rewrite? A horrifying evening of wrangling my server proved to
+        me that the way I was hosting it was...a tad unsustainable. It was
+        raining 502 errors all the time. :(
+      h1 Current Projects
+      ul 
+        li I'm making plenty of #[a(href="//art.aliceyoung.io") art] this summer.
+        li Watch #[a(href="https://github.com/aliceyoung9/port-wine") this site] come to life.
+      h1 Contact
+      p 
+        #[a(href="mailto:aliceyoung.9@gmail.com") aliceyoung.9@gmail.com]
